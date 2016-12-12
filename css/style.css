@@ -15,7 +15,7 @@
   h1{
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
     color: black;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -43,15 +43,15 @@
 
   .description{
     text-align: left;
-    font-size: 13px;
+    font-size: 17px;
     color: black;
     padding-top: 5px;
   }
   p{
     font-family: 'Raleway', sans-serif;
     text-align: left;
-    /*margin: auto;*/
-    font-size: 12px;
+    margin-left: 15px;
+    font-size: 16px;
     color: black;
 
   }
@@ -139,7 +139,7 @@
       font-size: 20px;
       background-color: #d2d2d2;
       font-style: bold;
-      margin-top: 20px;
+      margin-top: 23px;
       margin-left: auto;
       margin-right: auto;
       margin: auto;
@@ -147,6 +147,7 @@
     #mobilemenu{
       border-style: none;
       background-color: #e5e5e5;
+      padding: 10px;
     }
 
     /*function ShowSignUp(){
