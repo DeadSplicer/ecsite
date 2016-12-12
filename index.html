@@ -20,16 +20,37 @@
 
     <body>
 
+      <div id="mobilemenu">
+        <h2>
+          <a href="menu.html" class="button">Menu</a><br>
+          <a href="menu.html" class="button">Menu</a><br>
+          <a href="about.html" class="button">About Us</a><br>
+          <a class="button">Home</a><br>
+          <a class="button">Home</a><br>
+          <a class="button">Home</a><br>
+          <a class="button">Home</a><br>
+          <a class="button">Home</a><br>
+          <a class="button">Home</a><br>
+          <a class="button">Home</a><br>
+        </h2>
+      </div>
+
+      <div id="show_mobile_menu">
+        <h2>
+          Menu
+        </h2>
+      </div>
+
       <div class="name-box">
         <h1><a href="index.html" class="button2">ERIC CHARLES</a></h1>
       </div>
 
 
-      <div id="buttonbox">
+      <div id="desktopmenu">
         <h2>
           <a href="menu.html" class="button">Menu</a><a href="menu.html" class="button">Menu</a><a href="about.html" class="button">About Us</a><a class="button">Home</a><a class="button">Home</a><a class="button">Home</a><a class="button">Home</a><a class="button">Home</a><a class="button">Home</a><a class="button">Home</a>
         </h2>
-    </div>
+      </div>
 
 
       <br><br>
@@ -138,24 +159,27 @@
 
           var isMobile = window.matchMedia("only screen and (max-width: 767px)");
 
+          $('#mobilemenu').hide();
+
           if (isMobile.matches) {
               //Conditional script here
-              $('#buttonbox').toggle();
-              alert("matches mobile");
+              $('#desktopmenu').hide();
+              $('#show_mobile_menu').show();
+
+
+              //alert("matches mobile");
           }
-
-          // if(screen.width <= 480){
-          //   alert(sceen);
-          //   $('#buttonbox').hide();
-          // }
-
-
-
-
-
-          $('.button').on('click', function(){
-            $('.box-three').slideToggle(200);
+          else {
+            $('#show_mobile_menu').hide();
+          }
+          $('#show_mobile_menu').on('click', function(){
+            $('#mobilemenu').slideToggle();
+            //alert("click");
           })
+
+          // $('.button').on('click', function(){
+          //   $('.box-three').slideToggle(200);
+          // })
 
 
         });
@@ -166,153 +190,3 @@
     </body>
 
   </html>
-
-
-  <body>
-
-    <div class="name-box">
-      <h1><a href="index.html" class="button2">ERIC CHARLES</a></h1>
-    </div>
-
-
-    <div id="buttonbox">
-      <h2>
-        <a href="menu.html" class="button">Menu</a><a href="menu.html" class="button">Menu</a><a href="about.html" class="button">About Us</a><a class="button">Home</a><a class="button">Home</a><a class="button">Home</a><a class="button">Home</a><a class="button">Home</a><a class="button">Home</a><a class="button">Home</a>
-      </h2>
-  </div>
-
-
-    <br><br>
-
-    <!-- <div class="box-three">
-      <img src="images/image.png" width=98% height=auto alt="insert image here">
-    </div> -->
-
-    <div class="container">
-      <div class="row">
-
-        <div class="col-sm-4">
-          <img src="images/image.png" width=100% height=auto alt="insert image here">
-          <p class="description">
-            <strong>t1</strong>
-            <p>body</p>
-          </p>
-        </div>
-
-
-
-        <div class="col-sm-4">
-          <img src="images/image.png" width=100% height=auto alt="insert image here">
-          <p class="description">
-            <strong>t1</strong>
-            <p>body</p>
-          </p>
-        </div>
-
-        <div class="col-sm-4">
-          <img src="images/image.png" width=100% height=auto alt="insert image here">
-          <p class="description">
-            <strong>t1</strong>
-            <p>body</p>
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-
-        <div class="col-sm-4">
-          <img src="images/image.png" width=100% height=auto alt="insert image here">
-          <p class="description">
-            <strong>t1</strong>
-            <p>body</p>
-          </p>
-        </div>
-
-
-
-        <div class="col-sm-4">
-          <img src="images/image.png" width=100% height=auto alt="insert image here">
-          <p class="description">
-            <strong>t1</strong>
-            <p>body</p>
-          </p>
-        </div>
-
-        <div class="col-sm-4">
-          <img src="images/image.png" width=100% height=auto alt="insert image here">
-          <p class="description">
-            <strong>t1</strong>
-            <p>body</p>
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-    <br><br><br>
-
-
-<!-- FOOTER INFO -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4">
-<!-- stuff -->
-        </div>
-        <div class="col-sm-4">
-<!-- stuff -->
-        </div>
-        <div class="col-sm-4">
-<!-- stuff -->
-        </div>
-      </div>
-    </div>
-
-
-    <!-- <div class="footer hide-on-mobile">
-      <a href="about.html" class="button2">More Information</a>
-    </div> -->
-
-    <br><br><br>
-
-
-
-
-    <script type="text/javascript" src="jquery/jquery-3.1.1.js"></script>
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-        //alert("QQQQQ");
-
-        // var isMobile = window.matchMedia("only screen and (max-width: 760px)");
-        //
-        // if (isMobile.matches) {
-        //     //Conditional script here
-        //     $('#buttonbox').toggle();
-        //     alert("matches mobile");
-        // }
-        //
-        if(screen.width <= 480){
-          alert(sceen);
-          $('#buttonbox').hide();
-        }
-
-
-
-
-
-        $('.button').on('click', function(){
-          $('.box-three').slideToggle(200);
-        })
-
-
-      });
-    </script>
-
-
-
-  </body>
-
-</html>
