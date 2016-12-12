@@ -1,0 +1,124 @@
+
+  div{
+    margin-bottom: 0px;
+  }
+
+  body{
+    background-color: #FFFFFF;
+  }
+
+  .col-sm-4{
+    padding: 2px;
+  }
+
+
+  h1{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  h2{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    /*color: gray;*/
+    font-style: italic;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+  }
+
+  .description{
+    text-align: left;
+    font-size: 13px;
+    color: black;
+    padding-top: 5px;
+  }
+  p{
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    /*margin: auto;*/
+    font-size: 12px;
+    color: black;
+
+  }
+
+    .box-one{
+      border-style: solid;
+      opacity: 40%;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: gray;
+      padding-bottom: 0px;
+    }
+    .box-two{
+      border-style: hidden;
+      padding-top: 0px;
+    }
+    .name-box{
+      border-style: hidden;
+      padding-top: 0px;
+      text-align: center;
+    }
+
+
+    .button{
+      background-color: #000000;
+      border: none;
+      color: white;
+      padding: 5px 28px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 1px 1px;
+      cursor: pointer;
+    }
+    .button:hover{
+      background-color: #DF8D00;
+      color: black;
+      text-decoration: none;
+    }
+    .button2{
+      background-color: #FFFFFF;
+      border: none;
+      color: black;
+      padding: 0px 0px;
+      text-align: center;
+      text-decoration: none;
+      display:block;
+      margin: 0px 0px;
+      cursor: pointer;
+    }
+    .button2:hover{
+      background-color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    .footer{
+      text-align: center;
+      position: fixed;
+      left: auto;
+      height: 45px;
+      bottom: 0px;
+      margin: 0px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      .hide-on-mobile{
+
+      }
+
+    }
+
+    #buttonbox{
+      border-style: none;
+    }
+
+    function ShowSignUp(){
+    $('#buttonbox').hide();
+    $('#divSignUp').show();
+}
