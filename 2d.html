@@ -3,6 +3,7 @@
   <html>
 
     <head>
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
       <title>2D Digital - Eric Charles</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
@@ -12,10 +13,10 @@
 
     <body>
 
-      <div id="mobilemenu">
+      <div id="mobilemenu" style="display:none;">
         <h2>
-          <a href="3d.html" class="mobilebutton">3D Digital</a><br>
-          <a href="2d.html" class="mobilebutton" style="background-color:grey;">2D Digital</a><br>
+          <!-- <a href="3d.html" class="mobilebutton">3D Digital</a><br> -->
+          <a href="2d.html" class="mobilebutton" style="background-color:grey;">Digital 2D & 3D</a><br>
           <a href="photography.html" class="mobilebutton">Photography</a><br>
           <a href="animation.html" class="mobilebutton">Animation</a><br>
           <a href="video.html" class="mobilebutton">Video</a><br>
@@ -27,7 +28,7 @@
         </h2>
       </div>
 
-      <div id="show_mobile_menu">
+      <div id="show_mobile_menu" style="display:none;">
         <div class="menu_button">
           Menu
         </div>
@@ -38,10 +39,10 @@
       </div>
 
 
-      <div id="desktopmenu">
+      <div id="desktopmenu"  style="display:none;">
         <h2>
-          <a href="3d.html" class="button">3D Digital</a>
-          <a href="2d.html" class="button" style="background-color:grey;">2D Digital</a>
+          <!-- <a href="3d.html" class="button">3D Digital</a> -->
+          <a href="2d.html" class="button" style="background-color:grey;">Digital 2D & 3D</a>
           <a href="photography.html" class="button">Photography</a>
           <a href="animation.html" class="button">Animation</a>
           <a href="video.html" class="button">Video</a>
@@ -67,7 +68,7 @@
             <a href="images/2d/0.jpg">
               <img src="images/2d/0.jpg" width=100% height=auto alt="insert image here">
               <div class="description">
-                <strong>This Will Destroy You (presentation inside)</strong>
+                <strong>This Will Destroy You (presentation - inside)</strong>
                 <p>Modeled and rendered in Blender</p>
               </div>
             </a>
@@ -359,6 +360,8 @@
           }
           else {
             $('#show_mobile_menu').hide();
+            $('#desktopmenu').show();
+
           }
           $('#show_mobile_menu').on('click', function(){
             $('#mobilemenu').slideToggle();
